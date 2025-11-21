@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: ecommerce
+
+resources:
+  - namespace.yaml
+  - secrets.yaml
+  - postgres-products.yaml
+  - postgres-orders.yaml
+  - postgres-payments.yaml
+  - postgres-events.yaml
+  - redis.yaml
+  - kafka.yaml
+  - products-service.yaml
+  - orders-service.yaml
+  - payments-service.yaml
+  - events-service.yaml
+
